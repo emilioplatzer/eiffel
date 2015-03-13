@@ -1,0 +1,15 @@
+.eiffel_ok{
+    color:green;
+}
+
+.eiffel_exception_expected{
+    color:red;
+}
+
+.eiffel_result_error{
+    color:red;
+}
+
+.eiffel_exception_ok{
+    color:green
+}
