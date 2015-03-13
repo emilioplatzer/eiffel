@@ -1,7 +1,7 @@
 {
   "name": "eiffel",
   "description": "Painless Contracts in Javascript",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Emilio Platzer <emilioplatzer@gmail.com>",
   "license": "MIT",
   "repository": "emilioplatzer/eiffel",

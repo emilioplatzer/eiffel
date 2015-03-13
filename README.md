@@ -27,10 +27,10 @@ Eiffel.global('intRandom',{
 });
 ```
 
-*More*: A non nonsense example in [eiffel_demo.js](examples/eiffel_demo.js) (solving quadratic equations). 
+*More*: A non nonsense example in [eiffel_demo.js](example/eiffel_demo.js) (solving quadratic equations). 
 
 ## My apologies
 I'm not native English speaker. Corrections are wellcome.
 
-Spanish documentation in [Introducción](doc/introduccion)
+Spanish documentation in [Introducción](doc/introduccion.md)
 
