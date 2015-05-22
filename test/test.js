@@ -50,7 +50,7 @@ describe('eiffel',function(){
                 result=real_roots_quadratic_equation(a,b,c);
             };
             if(exception_expected){
-                expect(doIt).throwException(new RegExp(_.escapeRegExp(exception_expected)));
+                expect(doIt).throwException(exception_expected);
                 console.log('ok',exception_expected);
             }else{
                 doIt();
@@ -61,9 +61,9 @@ describe('eiffel',function(){
     test_rrqe(1,1,-12,[-4,3]); // (x-3)(x+4)
     test_rrqe(1,-2,1,[1]); // x2-4
     test_rrqe(1,1,1,[]);
-    // test_rrqe(1,1,'j',null,'not a number xxxx');
-    // test_rrqe(0,1,-1,null,'a=0, not quadratic');
-    // test_rrqe(2,-1,-12,null,'erroneous result');  // (2x-1)(2x-2)=4x2-6x
+    test_rrqe(1,1,'j',null,/fails in require/,'not a number');
+    test_rrqe(0,1,-1,null,/fails in require/,'a=0, not quadratic');
+    test_rrqe(2,-1,-12,null,/fails in ensure/,'erroneous result');  // (2x-1)(2x-2)=4x2-6x
   });
 });
 
