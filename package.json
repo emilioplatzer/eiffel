@@ -26,9 +26,14 @@
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
     "start": "node example/server.js"
   },
+  "jshintConfig": {
+    "asi": false,
+    "forin": true,
+    "curly": true
+  },
   "qa-control": {
     "package-version": "0.0.1",
-    "coverage": 90,
+    "coverage": 80,
     "run-in": "both",
     "stability": "extending",
     "type": "lib"

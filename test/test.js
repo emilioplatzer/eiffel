@@ -5,7 +5,6 @@ var expect = require('expect.js');
 var Eiffel = require('..');
 
 global.real_roots_quadratic_equation = function real_roots_quadratic_equation(a,b,c) {
-    console.log('entro',arguments);
     var delta=b*b-4*a*c;
     if(delta<0) return [];
     var r=-b/(2*a);
@@ -16,7 +15,6 @@ global.real_roots_quadratic_equation = function real_roots_quadratic_equation(a,
     if(a==4) return [1,2,3]; // too many elements
     if(a==5) return [1,2]; // not the correct roots
     if(a==6) throw new Error("this is bug");
-    console.log('por retornar',[r-s,r+s]);
     return [r-s,r+s];
 }
 
@@ -51,7 +49,6 @@ describe('eiffel',function(){
             };
             if(exception_expected){
                 expect(doIt).throwException(exception_expected);
-                console.log('ok',exception_expected);
             }else{
                 doIt();
                 expect(result).to.eql(result_expected);
