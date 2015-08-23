@@ -1,50 +1,38 @@
+<!-- multilang from README.md
+
+
+
+
+NO MODIFIQUE ESTE ARCHIVO. FUE GENERADO AUTOMÁTICAMENTE POR multilang.js
+
+
+
+
+-->
 # eiffel
 Painless Contracts in Javascript
 
-<!--multilang v0 en:README.md es:LEEME.md -->
 
-<!--lang:es--]
 
 Contratos en Javascript similar a lenguaje Eiffel
 
-[!--lang:*-->
 
 <!-- cucardas -->
 
 <!--multilang buttons-->
 
-language: ![English](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-en.png)
-also available in:
-[![Spanish](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-es.png)](LEEME.md) - 
+idioma: ![castellano](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-es.png)
+también disponible en:
+[![inglés](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-en.png)](README.md)
 
-<!--lang:en-->
-
-## Instalation
-
-<!--lang:es--]
 
 ## Instalación
 
-[!--lang:*-->
 
 ```sh
 > npm install eiffel
 ```
 
-<!--lang:en-->
-
-Add Contracts in Javascript without changing the function definitions. 
-Like in Eiffel contracts are writing in native language (Javascript) with minimal function calls and can easily enabled and disabled.
-
-# Main features
- * Declare your function as you usualy do
- * Declare *require* and *ensure* clausules like Eiffel anywhere
- * Enable and disable when you want without changing the code 
- * Enjoy
-
-## Examples
-
-<!--lang:es--]
 
 Con **Eiffel** se agregan contratos en Javascript sin necesidad de cambiar la definición original de las funciones.
 Al igual que en el **lenguaje Eiffel** los contratos están escritos en el lenguaje nativo (Javascript)
@@ -57,7 +45,6 @@ y pueden ser fácilmente activados y desactivados.
 
 ## Ejemplos
 
-[!--lang:*-->
 
 ```js
 function intRandom(min, max){
@@ -74,11 +61,6 @@ Eiffel.global('intRandom',{
 });
 ```
 
-[!--lang:en-->
-
-*More*: A non nonsense example in [eiffel_demo.js](example/eiffel_demo.js) (solving quadratic equations). 
-
-<!--lang:es--]
 
 *Más*: 
   * Hay un ejemplo no trivial en [eiffel_demo.js](example/eiffel_demo.js) (resolviendo una equación cuadrática). 
