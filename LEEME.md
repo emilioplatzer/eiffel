@@ -1,21 +1,10 @@
-<!-- multilang from README.md
-
-
-
-
-NO MODIFIQUE ESTE ARCHIVO. FUE GENERADO AUTOMÁTICAMENTE POR multilang.js
-
-
-
-
--->
+<!--multilang v0 es:LEEME.md en:README.md -->
 # eiffel
-Painless Contracts in Javascript
-
-
-
+<!--lang:es-->
 Contratos en Javascript similar a lenguaje Eiffel
-
+<!--lang:en--]
+Painless Contracts in Javascript
+[!--lang:*-->
 
 <!-- cucardas -->
 ![extending](https://img.shields.io/badge/stability-extending-orange.svg)
@@ -25,21 +14,29 @@ Contratos en Javascript similar a lenguaje Eiffel
 [![coverage](https://img.shields.io/coveralls/emilioplatzer/eiffel/master.svg)](https://coveralls.io/r/emilioplatzer/eiffel)
 [![climate](https://img.shields.io/codeclimate/github/emilioplatzer/eiffel.svg)](https://codeclimate.com/github/emilioplatzer/eiffel)
 [![dependencies](https://img.shields.io/david/emilioplatzer/eiffel.svg)](https://david-dm.org/emilioplatzer/eiffel)
+[![qa-control](http://codenautas.com/github/emilioplatzer/eiffel.svg)](http://codenautas.com/github/emilioplatzer/eiffel)
 
 <!--multilang buttons-->
 
 idioma: ![castellano](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-es.png)
 también disponible en:
-[![inglés](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-en.png)](README.md)
+[![inglés](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-en.png)](README.md) - 
 
+<!--lang:es-->
 
 ## Instalación
 
+<!--lang:en--]
+
+## Instalation
+
+[!--lang:*-->
 
 ```sh
 > npm install eiffel
 ```
 
+<!--lang:es-->
 
 Con **Eiffel** se agregan contratos en Javascript sin necesidad de cambiar la definición original de las funciones.
 Al igual que en el **lenguaje Eiffel** los contratos están escritos en el lenguaje nativo (Javascript)
@@ -52,6 +49,20 @@ y pueden ser fácilmente activados y desactivados.
 
 ## Ejemplos
 
+<!--lang:en--]
+
+Add Contracts in Javascript without changing the function definitions. 
+Like in Eiffel contracts are writing in native language (Javascript) with minimal function calls and can easily enabled and disabled.
+
+# Main features
+ * Declare your function as you usualy do
+ * Declare *require* and *ensure* clausules like Eiffel anywhere
+ * Enable and disable when you want without changing the code 
+ * Enjoy
+
+## Examples
+
+[!--lang:*-->
 
 ```js
 function intRandom(min, max){
@@ -68,8 +79,14 @@ Eiffel.global('intRandom',{
 });
 ```
 
+<!--lang:es-->
 
 *Más*: 
   * Hay un ejemplo no trivial en [eiffel_demo.js](example/eiffel_demo.js) (resolviendo una equación cuadrática). 
   * una [Introducción](doc/introduccion.md) más amplia
 
+<!--lang:en--]
+
+*More*: A non nonsense example in [eiffel_demo.js](example/eiffel_demo.js) (solving quadratic equations). 
+
+[!--lang:*-->
