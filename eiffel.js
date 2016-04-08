@@ -69,6 +69,11 @@ Eiffel.global=function(functionName,eiffelDefinition){
     return Eiffel.localDef(globalObject,functionName,eiffelDefinition);
 };
 
+Eiffel.method = function(containerObject,functionName,eiffelDefinition){
+    return Eiffel.localDef(containerObject.prototype,functionName,eiffelDefinition);
+    
+}
+
 return Eiffel;
 
 });

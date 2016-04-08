@@ -38,6 +38,24 @@ Eiffel.global('real_roots_quadratic_equation',{
     }
 });
 
+function Figure(){
+}
+
+Figure.prototype.rotate = function rotate(alfa){
+    if(alfa==1) throw new Error("don't want");
+    this.orientation += alfa + (alfa==2?2:0);
+    if(alfa==3) return 9;
+}
+
+Eiffel.method(Figure, 'rotate',{
+    require: function(save, alfa){
+        save.orientation = this.orientation;
+        return !isNaN(alfa) && !isNaN(this.orientation);
+    },
+    ensure: function(result, alfa){
+        return result.returned === undefined &&  this.orientation == result.save.orientatio+alfa;
+    }
+});
 
 describe('eiffel',function(){
   describe('global functions',function(){
