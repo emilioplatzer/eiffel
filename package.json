@@ -1,7 +1,7 @@
 {
   "name": "eiffel",
   "description": "Painless Contracts in Javascript",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Emilio Platzer <emilioplatzer@gmail.com>",
   "license": "MIT",
   "repository": "emilioplatzer/eiffel",
@@ -10,11 +10,11 @@
   }],
   "main": "eiffel.js", 
   "dependencies": {
-    "lodash": "~4.6.1"
+    "lodash": "~4.17.4"
   },
   "devDependencies": {
-    "istanbul": "~0.4.2",
-    "mocha": "~2.4.5",
+    "istanbul": "~0.4.5",
+    "mocha": "~3.5.0",
     "expect.js": "~0.3.1"
   },
   "engines": {
